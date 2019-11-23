@@ -28,3 +28,4 @@ gulp.task('watch', function() {
     gulp.watch('./sass/**/*.scss', gulp.parallel('sass'));
 });
 gulp.task('default', gulp.parallel('sass', 'browser-sync', 'watch'));
+

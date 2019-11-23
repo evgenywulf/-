@@ -40,7 +40,7 @@ body {
 .logo {
   position:relative;
   background-color:$background-color;
-  padding:20px;
+  padding:20px 20px 0px 20px;
 }
 .logo img {
   max-width:360px;
@@ -259,9 +259,10 @@ body {
   }
   .logo {
     position: absolute;
+    padding: 10px 10px 0px 10px;
   }
   .logo img {
-    max-width: 250px;
+    max-width: 170px;
     min-width: 75px;
     width: 100%;
   }
@@ -277,7 +278,7 @@ body {
 
   .nav-toggle {
     position: absolute;
-    left: 310px;
+    left: 205px;
     top: 0.3em;
     background: inherit;
     color: $primary-color;
@@ -309,7 +310,7 @@ body {
 
   [id='nav-toggle']:checked ~ .header > .nav-toggle {
     left: auto;
-    right: 25px;
+    right: 20px;
     top: 0.3em;
     background: none;
   }
@@ -322,8 +323,8 @@ body {
 
   [id='nav-toggle']:checked ~ .header>.navigation {
     position: absolute;
-    top: 300px;
-    right: 120px;
+    top: 220px;
+    right: 110px;
     height:fit-content;
 
   }
@@ -334,7 +335,7 @@ body {
     background-color:#5c6d78;
     height: 100%;
     bottom: 0;
-    width: 675px;
+    width: 565px;
   }
 
   [id='nav-toggle']:checked ~ .header > .nav-toggle:after {
@@ -342,6 +343,9 @@ body {
   }
   .list-news__items {
     width:100%;
+  }
+  .navigation__text a {
+    font-size:1.2em
   }
 }
 
@@ -431,7 +435,7 @@ body {
     width: 570px;
   }
   [id='nav-toggle']:checked ~ .header>.navigation {
-    top: 200px;
+    top: 170px;
   }
 }
 
