@@ -2,7 +2,8 @@
 
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
-    browserSync = require('browser-sync');
+    browserSync = require('browser-sync'),
+    image2base64 = require('image-to-base64');
 
 gulp.task('browser-sync', function() {
     browserSync({

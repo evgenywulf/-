@@ -8,13 +8,14 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" class="holderjs">
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script src="js/holder.js"></script>
+	<script src="node_modules/holderjs/holder.js"></script>
+	<script src="node_modules/image-to-base64/image-to-base64.min.js"></script>
 </head>
 <body>
 <input type="checkbox" id="nav-toggle" hidden>
 <div class="header">
 	<div class="logo">
-		<img data-src="holder.js/300x180?outline=yes&auto=yes&bg=fff&fg=5c6d78&text=Превью">
+		<img data-src="holder.js/300x180?outline=yes&auto=yes&bg=fff&fg=5c6d78&text=Превью/Кастом">
 	</div>
 	<div class="navigation">
 		<div class="navigation__list">
@@ -38,7 +39,7 @@
 <section class="section">
 	<div class="top-news">
 		<div class="top-news__image">
-			<img src="images/top.webp" />
+			<img id="img_holder_top" src="" />
 		</div>
 		<div class="top-news__content">
 			<div class="top-news__title">
@@ -57,7 +58,7 @@
 		<div class="list-news__items">
 			<div class="list-news__image">
 				<!--<img data-src="holder.js/425x213?font='Font Awesome 5 Free'&text=&bg=b3b3b3&fg=e7e7e7&size=265px">-->
-				<img src="images/thumb.webp" />
+				<img id="img_holder_1" src="" />
 			</div>
 			<div class="list-news__content">
 				<div class="list-news__title">Heading 1</div>
@@ -68,7 +69,7 @@
 		</div>
 		<div class="list-news__items">
 			<div class="list-news__image">
-				<img src="images/thumb.webp" />
+				<img id="img_holder_2" src="" />
 			</div>
 			<div class="list-news__content">
 				<div class="list-news__title">Heading 1</div>
@@ -78,7 +79,7 @@
 		</div>
 		<div class="list-news__items">
 			<div class="list-news__image">
-				<img src="images/thumb.webp" />
+				<img id="img_holder_3" src="" />
 			</div>
 			<div class="list-news__content">
 				<div class="list-news__title">Heading 1</div>
@@ -88,7 +89,7 @@
 		</div>
 		<div class="list-news__items">
 			<div class="list-news__image">
-				<img src="images/thumb.webp" />
+				<img id="img_holder_4" src="" />
 			</div>
 			<div class="list-news__content">
 				<div class="list-news__title">Heading 1</div>
@@ -98,7 +99,7 @@
 		</div>
 		<div class="list-news__items">
 			<div class="list-news__image">
-				<img src="images/thumb.webp" />
+				<img id="img_holder_5" src="" />
 			</div>
 			<div class="list-news__content">
 				<div class="list-news__title">Heading 1</div>
@@ -108,7 +109,7 @@
 		</div>
 		<div class="list-news__items">
 			<div class="list-news__image">
-				<img src="images/thumb.webp" />
+				<img id="img_holder_6" src="" />
 			</div>
 			<div class="list-news__content">
 				<div class="list-news__title">Heading 1</div>
@@ -118,7 +119,7 @@
 		</div>
 		<div class="list-news__items">
 			<div class="list-news__image">
-				<img src="images/thumb.webp" />
+				<img id="img_holder_7" src="" />
 			</div>
 			<div class="list-news__content">
 				<div class="list-news__title">Heading 1</div>
@@ -128,7 +129,7 @@
 		</div>
 		<div class="list-news__items">
 			<div class="list-news__image">
-				<img src="images/thumb.webp" />
+				<img id="img_holder_8" src="" />
 			</div>
 			<div class="list-news__content">
 				<div class="list-news__title">Heading 1</div>
@@ -138,19 +139,6 @@
 		</div>
 	</div>
 </section>
-<script>
-
-    Holder.run();
-
-    $(function () {
-        $("#invisible").show();
-
-        var resize = true;
-        $("#toggleResize").on("click", function () {
-            resize = !resize;
-            Holder.setResizeUpdate($(this).get(0), resize);
-        });
-    });
-</script>
+<script src="js/script.js"></script>
 </body>
 </html>

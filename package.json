@@ -6,6 +6,7 @@
   "dependencies": {
     "easyimage": "^3.1.1",
     "holderjs": "^2.9.6",
+    "image-to-base64": "^2.0.1",
     "placeholder.js": "^3.1.0",
     "react-placeholder-img": "^1.0.0"
   },
