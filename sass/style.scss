@@ -4,6 +4,7 @@
 
 $font-stack:Philosopher, sans-serif;
 $primary-color:#fff;
+$black-color:#000;
 $background-color:#fff;
 $menu-color:#5c6d78;
 $image-background-color:#e6e6e6;
@@ -15,6 +16,13 @@ body {
   font-size:18px;
   -webkit-animation: bugfix infinite 1s;
   font-family: $font-stack;
+}
+
+a{
+  color:$black-color;
+}
+a:hover {
+  color:$menu-color;
 }
 
 @-webkit-keyframes bugfix {
@@ -35,6 +43,10 @@ body {
 }
 .navigation a {
   color:$primary-color;
+  text-decoration:none;
+}
+.navigation a:hover {
+  color:$black-color;
   text-decoration:none;
 }
 .logo {
@@ -149,6 +161,8 @@ body {
   margin-left: auto;
   width:39px;
   height:53px;
+  font-size:45px;
+  font-weight:100;
 }
 .list-news__image {
   padding: 15px;
@@ -268,16 +282,11 @@ body {
     bottom: 0;*/
     overflow:initial;
     position:fixed;
-    -webkit-transition: all .8s ease;
-    transition: all .8s ease;
     opacity: 0.9;
     width:100%;
     top: 0;
     margin: 0;
     left: 0px;
-    -webkit-transition: right 0.3s;
-    -moz-transition: right 0.3s;
-    transition: right 0.3s;
     z-index: 2000;
   }
   .logo {
@@ -291,7 +300,13 @@ body {
     height:initial!important;
   }
   .logo:after {
-    background:none;
+    background: none;
+    right: 0;
+    width: initial;
+    height: 0;
+    bottom: -20px;
+    border-top: 20px solid #fff;
+    border-right: 190px solid transparent;
   }
   .navigation {
     height: 70px;
@@ -347,7 +362,7 @@ body {
 
   [id='nav-toggle']:checked ~ .header>.navigation {
     position: absolute;
-    top: 220px;
+    top: 200px;
     right: 110px;
     height:fit-content;
 
@@ -360,6 +375,9 @@ body {
     height: 100%;
     bottom: 0;
     width: 565px;
+    -webkit-transition: right 0.3s;
+    -moz-transition: right 0.3s;
+    transition: left 2.3s;
   }
 
   [id='nav-toggle']:checked ~ .header > .nav-toggle:after {
@@ -446,8 +464,16 @@ body {
   .logo img {
     max-width: 150px;
   }
+  .logo:after {
+    bottom: -20px;
+    border-top: 20px solid #fff;
+    border-right: 170px solid transparent;
+  }
   .header {
     width: 570px;
+    -webkit-transition: right 0.3s;
+    -moz-transition: right 0.3s;
+    transition: right 0.3s;
   }
   .nav-toggle {
     left: 185px;
@@ -459,7 +485,7 @@ body {
     width: 545px;
   }
   [id='nav-toggle']:checked ~ .header>.navigation {
-    top: 170px;
+    top: 150px;
   }
 }
 
