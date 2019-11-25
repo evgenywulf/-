@@ -136,10 +136,12 @@ a:hover {
   font-size:28px;
   font-weight:600;
   margin-top:20px;
+  overflow-wrap: break-word;
 }
 .top-news__text {
   margin-top:10px;
   font-weight:500;
+  overflow-wrap: break-word;
 }
 .list-news {
   display:flex;
@@ -150,6 +152,7 @@ a:hover {
   margin: 0 auto;
   padding:10px;
   min-width:20%;
+  max-width: 300px;
 }
 .list-news__content {
   background-color:$background-color;
@@ -171,9 +174,11 @@ a:hover {
   font-size:28px;
   font-weight:600;
   margin-bottom:10px;
+  overflow-wrap: break-word;
 }
 .list-news__text {
   margin-bottom:10px;
+  overflow-wrap: break-word;
 }
 
 /******************************
