@@ -11,7 +11,7 @@
     "react-placeholder-img": "^1.0.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "grunt-lips": "^4.1.5",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2"
